@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style> @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&display=swap'); </style> -->
+    <style> @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&family=Unbounded:wght@200&display=swap'); </style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&family=Roboto+Condensed:ital,wght@1,700&family=Unbounded:wght@200&display=swap'); </style>
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <section class="weatherApp">
+        <div class="location">
+            <h3 id="city" style="font-size: 50px;">City Name</h3>
+            <h5 id="country" style="font-size: 30px;">Country Name</h5>
+        </div>
+        <div class="information">
+            <div class="temp_information">
+                <h2><span id="temp">0</span><sup>o</sup>C</h2>
+            </div>
+            <div class="image">
+                <img src="https://oxenticstemplates.biz/templatemonster/weather/images/banne-img-right.png" alt="">
+            </div>
+        </div>
+        <div class="search">
+            <input id="user_input" type="text" placeholder="Enter City Name">
+            <button onclick="checkTemp()">Search</button>
+        </div>
+    </section>
+    <script src="weather.js"></script>
+</body>
+
+</html>
